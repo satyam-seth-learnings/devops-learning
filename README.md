@@ -1,1 +1,1 @@
-# nginx-learning
+# devops-learning
