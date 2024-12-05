@@ -1,0 +1,8 @@
+HOST = 127.0.0.1
+PORT = 8000
+DATABASE_URL = "mongodb://127.0.0.1:27017"
+DB_NAME = "mernproject"
+DB_USERNAME = "satyam-seth"
+DB_PASSWORD = "Hello123456#"
+DB_AUTH_SOURCE = "mernproject"
+
