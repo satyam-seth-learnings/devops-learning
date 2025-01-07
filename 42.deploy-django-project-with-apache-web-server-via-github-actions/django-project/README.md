@@ -1,1 +1,1 @@
-# deploy-django-project-with-apache-web-server-via-github-deploy
+# deploy-django-project-via-github-deploy
