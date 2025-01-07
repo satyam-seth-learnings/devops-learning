@@ -1,0 +1,17 @@
+[Unit]
+Description=django-project.com.gunicorn daemon
+Requires=django-project.com.gunicorn.socket
+After=network.target
+
+[Service]
+User=try-nginx
+Group=try-nginx
+WorkingDirectory=/home/try-nginx/django-project
+ExecStart=/home/try-nginx/django-project/.venv/bin/gunicorn \
+        --access-logfile - \
+        --workers 3 \
+        --bind unix:/run/django-project.com.gunicorn.sock \
+        shoppinglyx.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
